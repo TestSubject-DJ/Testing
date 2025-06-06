@@ -188,3 +188,55 @@ footer {
     box-shadow: 0 0 10px rgba(255,255,255,0.4);
     color: #000;
 }
+.releases-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 900px) {
+    .releases-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+    .releases-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 599px) {
+    .releases-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.release-card {
+    background: #1f1f1f;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.release-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.release-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+.release-card:hover img {
+    transform: scale(1.05);
+}
+
+.release-card h3 {
+    font-family: system-ui, sans-serif;
+    font-weight: 700;
+    margin: 0.75rem;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
