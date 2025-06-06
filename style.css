@@ -50,6 +50,16 @@ nav li {
     margin: 0 1rem;
 }
 
+nav a {
+    color: #f8d800;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
 main {
     padding: 2rem;
 }
@@ -69,13 +79,8 @@ section {
     max-width: 300px;
     width: 100%;
     height: auto;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: #111;
-    color: #888;
+    border: 2px solid #f8d800;
+    border-radius: 8px;
 }
 
 .embeds {
@@ -86,4 +91,11 @@ footer {
     width: 100%;
     border: none;
     margin-top: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #111;
+    color: #888;
 }
