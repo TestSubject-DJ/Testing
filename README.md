@@ -3,7 +3,7 @@ Experiments and Random Testing
 
 ## Website
 
-`index.html` provides a small personal site for Gino Colombi. The page links to Spotify, Beatport and SoundCloud, and embeds players from both services. The photo gallery pulls images from remote URLs so no binary assets are stored in the repository.
+`index.html` provides a profile page for DJ/producer **Gino Colombi**. It now includes a responsive navigation menu driven by a small JavaScript file and features a bold hero image. Embedded SoundCloud and Spotify players showcase the latest releases, while a grid-based gallery loads artwork and photos from Cloudinary.
 
 ## HTML Validation
 
