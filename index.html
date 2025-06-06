@@ -4,51 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Official home of underground house DJ & producer Gino Colombi. Listen to mixes, find releases, and get the latest news.">
-    <meta name="keywords" content="Gino Colombi, underground house, DJ, producer, mixes, releases">
+    <meta name="description" content="Official home of underground house DJ and producer Gino Colombi. Explore releases, mixes and vinyl culture.">
+    <meta name="keywords" content="Gino Colombi, underground house, DJ, producer, vinyl, releases, mixes">
     <title>Gino Colombi - Underground House DJ & Producer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;family=Bebas+Neue&amp;display=swap" crossorigin="anonymous" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header class="hero">
+        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
         <h1>Gino Colombi</h1>
         <p class="tagline">Underground House Music DJ &amp; Producer</p>
     </header>
-    <nav>
+    <nav id="main-nav">
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#releases">Releases</a></li>
             <li><a href="#gallery">Gallery</a></li>
-            <li><a href="https://open.spotify.com/artist/6HaKvR8UvKwViIaIpUPVJA">Spotify</a></li>
-            <li><a href="https://www.beatport.com/artist/gino-colombi/1033866">Beatport</a></li>
-            <li><a href="http://soundcloud.com/GinoColombi">SoundCloud</a></li>
-            <li><a href="https://soundcloud.com/houseisliferecords">House Is Life Records</a></li>
+            <li><a href="https://open.spotify.com/artist/6HaKvR8UvKwViIaIpUPVJA" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+            <li><a href="https://www.beatport.com/artist/gino-colombi/1033866" target="_blank" rel="noopener noreferrer">Beatport</a></li>
+            <li><a href="https://soundcloud.com/GinoColombi" target="_blank" rel="noopener noreferrer">SoundCloud</a></li>
+            <li><a href="https://instagram.com/gino.colombi" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.traxsource.com/artist/your-link" target="_blank" rel="noopener noreferrer">Traxsource</a></li>
+            <li><a href="https://thebasementdiscos.bandcamp.com/" target="_blank" rel="noopener noreferrer">Bandcamp</a></li>
+            <li><a href="https://www.mixcloud.com/your-link" target="_blank" rel="noopener noreferrer">Mixcloud</a></li>
         </ul>
     </nav>
     <main class="container">
         <section id="about">
             <h2>About</h2>
-            <p>Gino Colombi brings an underground vibe to every dance floor. With deep grooves and infectious energy, his sets move crowds and keep them coming back for more. Follow Gino's journey on <a href="https://github.com/TestSubject-DJ">GitHub</a> for behind-the-scenes projects and playlists.</p>
+            <p>Gino Colombi is a genre-blending DJ &amp; producer pushing underground house forward with soul, energy and vinyl grit. Known for mixing Old School House, UKG, Tech House and Techno with trancey synths, jazzy organs and chopped vocals. His sets are dynamic and his productions speak to both nostalgia and innovation.</p>
         </section>
 
         <section id="releases">
             <h2>Latest Releases</h2>
-            <p>Stream Gino's newest tracks on your preferred platform:</p>
+            <ul>
+                <li>Keep It Real EP – Great Stuff Talents (2025-03-21)</li>
+                <li>My Essence EP – Late Night Munchies (2024-10-18)</li>
+                <li>Just Because – Soul Beach Records (2024-08-30)</li>
+                <li>Digital Waves – theBasement Discos (2023-07-14)</li>
+            </ul>
+            <p>Stream on your preferred platform:</p>
             <ul class="platform-links">
-                <li><a href="https://open.spotify.com/artist/6HaKvR8UvKwViIaIpUPVJA">Spotify</a></li>
-                <li><a href="https://www.beatport.com/artist/gino-colombi/1033866">Beatport</a></li>
-                <li><a href="http://soundcloud.com/GinoColombi">SoundCloud</a></li>
+                <li><a href="https://open.spotify.com/artist/6HaKvR8UvKwViIaIpUPVJA" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+                <li><a href="https://www.beatport.com/artist/gino-colombi/1033866" target="_blank" rel="noopener noreferrer">Beatport</a></li>
+                <li><a href="https://soundcloud.com/GinoColombi" target="_blank" rel="noopener noreferrer">SoundCloud</a></li>
             </ul>
             <div class="embeds">
-                <iframe width="100%" height="166" scrolling="no" frameborder="0" allow="autoplay"
-                    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/ginocolombi/lose-control-radio-edit&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" sandbox="allow-same-origin allow-scripts allow-popups" allow="autoplay" referrerpolicy="no-referrer"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2092105026&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true">
                 </iframe>
-
-                <iframe style="border-radius:12px"
-                    src="https://open.spotify.com/embed/album/6a3SXFGb3E82fHaamJ914Q?utm_source=generator"
-                    width="100%" height="380" frameborder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6FDtCG4klWV4T1h7SC7QJo?utm_source=generator" referrerpolicy="no-referrer"
+                    width="100%" height="352" frameborder="0" sandbox="allow-same-origin allow-scripts allow-popups" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
                 </iframe>
             </div>
         </section>
@@ -56,13 +64,18 @@
         <section id="gallery">
             <h2>Gallery</h2>
             <div class="gallery">
-                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80" alt="Gino Colombi Live">
-                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="DJ Setup">
-                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80" alt="Underground House Art">
-                <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=800&q=80" alt="90s House DJ Illustration">
-                <img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=800&q=80" alt="Warehouse Party Vibe">
-                <img src="https://images.unsplash.com/photo-1485579149621-3123dd979885?auto=format&fit=crop&w=800&q=80" alt="Vinyl Motion Blur">
-                <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" alt="Feel Down Artwork">
+                <img src="https://res.cloudinary.com/dexemnogl/image/upload/v1749225059/999_ldyfix.jpg" alt="Nervous style graphic" loading="lazy">
+                <img src="https://res.cloudinary.com/dexemnogl/image/upload/v1749225059/GinoAtHome_ikgsl6.jpg" alt="Gino at home studio" loading="lazy">
+                <img src="https://res.cloudinary.com/dexemnogl/image/upload/v1749225059/90sHouse_wmieal.png" alt="90s house illustration" loading="lazy">
+                <img src="https://res.cloudinary.com/dexemnogl/image/upload/v1749225059/8twzqzfedacfl8yk1ju6i_zzbysx.jpg" alt="Candid DJ shot" loading="lazy">
+                <img src="https://res.cloudinary.com/dexemnogl/image/upload/v1749225060/out-0_zmw1om.png" alt="Bold club poster" loading="lazy">
+                <img src="https://res.cloudinary.com/dexemnogl/image/upload/v1749225060/GinoPlaying_fdzr61.jpg" alt="Gino playing live" loading="lazy">
+                <img src="https://res.cloudinary.com/dexemnogl/image/upload/v1749225060/Setup_tv0ltg.jpg" alt="Turntable setup" loading="lazy">
+                <img src="https://res.cloudinary.com/dexemnogl/image/upload/v1749225060/9999_od0vbz.jpg" alt="Hand-drawn record art" loading="lazy">
+                <img src="https://res.cloudinary.com/dexemnogl/image/upload/v1749225061/Vinyl_m0fljs.jpg" alt="Vinyl collection" loading="lazy">
+                <img src="https://res.cloudinary.com/dexemnogl/image/upload/v1749225062/UndergroundHouse_aubn4a.png" alt="Underground house graphic" loading="lazy">
+                <img src="https://res.cloudinary.com/dexemnogl/image/upload/v1749225064/ChatGPT_Image_Apr_9_2025_08_31_20_PM_fowq04.png" alt="Abstract DJ art" loading="lazy">
+                <img src="https://res.cloudinary.com/dexemnogl/image/upload/v1749225068/Warehouse_gf3s7n.png" alt="Warehouse exterior" loading="lazy">
             </div>
         </section>
     </main>
