@@ -1,15 +1,23 @@
+:root {
+    --bg-color: #111;
+    --accent-yellow: #ffe600;
+    --accent-pink: #f06;
+    --text-color: #f2f2f2;
+}
+
 body {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    background-color: #000;
-    color: #f8f8f8;
+    font-family: system-ui, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
     line-height: 1.6;
     scroll-behavior: smooth;
+    background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 3px);
 }
 
 a {
-    color: #f8d800;
+    color: var(--accent-yellow);
     text-decoration: none;
 }
 a:hover,
@@ -19,9 +27,11 @@ a:focus {
 }
 
 h1, h2, h3 {
-    font-family: 'Bebas Neue', Impact, sans-serif;
-    letter-spacing: 1px;
+    font-family: 'Impact', 'Arial Black', system-ui, sans-serif;
+    letter-spacing: 2px;
     margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 header.hero {
@@ -33,14 +43,20 @@ header.hero {
     position: relative;
 }
 
+header.hero h1 {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    color: var(--accent-yellow);
+    text-shadow: 2px 2px 0 #000;
+}
+
 .nav-toggle {
     display: none;
     position: absolute;
     top: 1rem;
     right: 1rem;
     background: transparent;
-    border: 2px solid #f8d800;
-    color: #f8d800;
+    border: 2px solid var(--accent-yellow);
+    color: var(--accent-yellow);
     font-size: 1.5rem;
     padding: 0.25rem 0.5rem;
     cursor: pointer;
@@ -49,7 +65,9 @@ header.hero {
 .tagline {
     margin-top: 0.5rem;
     font-style: italic;
-    color: #f8d800;
+    color: var(--accent-yellow);
+    font-family: 'Impact', 'Arial Black', system-ui, sans-serif;
+    text-transform: uppercase;
 }
 
 nav ul {
@@ -60,12 +78,13 @@ nav ul {
     padding: 0.5rem;
     margin: 0;
     background: #111;
-    border-bottom: 3px solid #f8d800;
+    border-bottom: 3px solid var(--accent-yellow);
 }
 
 nav li {
     margin: 0 1rem;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .container {
@@ -77,7 +96,7 @@ nav li {
 section {
     margin-bottom: 3rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--accent-pink);
 }
 
 .gallery {
@@ -96,7 +115,8 @@ footer {
     text-align: center;
     padding: 1rem;
     background: #111;
-    color: #888;
+    color: var(--text-color);
+    border-top: 2px solid var(--accent-yellow);
 }
 
 .embeds {
@@ -126,7 +146,7 @@ footer {
 
 .paypal-support-card {
     background: #1f1f1f;
-    color: #f0f0f0;
+    color: var(--text-color);
     padding: 1.5rem;
     border-radius: 8px;
     max-width: 380px;
@@ -140,17 +160,17 @@ footer {
     font-size: 0.95rem;
     line-height: 1.5;
     margin-bottom: 1rem;
-    color: #cccccc;
+    color: var(--text-color);
 }
 
 .paypal-support-card a {
-    color: #000000;
+    color: var(--accent-pink);
     text-decoration: underline;
 }
 
 .paypal-button {
     display: inline-block;
-    background-color: white;
+    background-color: var(--accent-yellow);
     color: #000;
     font-weight: 600;
     border: none;
@@ -164,7 +184,7 @@ footer {
 }
 
 .paypal-button:hover {
-    background-color: #f5f5f5;
-    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    background-color: var(--accent-pink);
+    box-shadow: 0 0 10px rgba(255,255,255,0.4);
     color: #000;
 }
