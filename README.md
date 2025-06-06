@@ -27,8 +27,11 @@ tidy -errors index.html
 
 ### Using the Python script
 
+Run the script with an optional filename. If no file is given it defaults to
+`index.html`:
+
 ```
-python3 validate_html.py
+python3 validate_html.py [file.html]
 ```
 
 ## Testing
@@ -40,3 +43,14 @@ tidy -errors index.html
 # or
 python3 validate_html.py
 ```
+
+## Previewing Locally
+
+You can preview the site in a browser without deploying it. From the repository
+root run:
+
+```
+python3 -m http.server
+```
+
+Then visit [http://localhost:8000/](http://localhost:8000/) in your browser.
