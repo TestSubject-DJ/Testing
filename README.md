@@ -13,6 +13,7 @@ This project may include HTML pages such as `index.html`. You can check for basi
 
 Install tidy with:
 
+
 ```
 sudo apt-get update
 sudo apt-get install -y tidy
@@ -51,3 +52,4 @@ python3 -m http.server
 ```
 
 Then visit [http://localhost:8000/](http://localhost:8000/) in your browser.
+
