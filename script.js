@@ -14,3 +14,29 @@ document.querySelectorAll('#main-nav a').forEach(link => {
     });
 });
 
+const sections = document.querySelectorAll('main section');
+const navLinks = document.querySelectorAll('#main-nav a');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href').includes(id)) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.5 });
+
+sections.forEach(sec => {
+    if (sec.classList.contains('fade-in')) {
+        sec.classList.add('fade-in');
+    }
+    observer.observe(sec);
+});
+
