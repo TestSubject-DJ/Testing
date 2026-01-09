@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Official home of underground house DJ and producer Gino Colombi. Explore releases, mixes and vinyl culture.">
+    <meta name="description"
+        content="Official home of underground house DJ and producer Gino Colombi. Explore releases, mixes and vinyl culture.">
     <meta name="keywords" content="Gino Colombi, underground house, DJ, producer, vinyl, releases, mixes">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://ginocolombi.com/">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hover.css@2.3.2/css/hover-min.css">
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Gino Colombi - Underground House DJ & Producer</title>
     <meta property="og:title" content="Gino Colombi – DJ & Producer" />
-    <meta property="og:image" content="https://res.cloudinary.com/dexemnogl/image/upload/v1749225060/GinoPlaying_fdzr61.jpg" />
+    <meta property="og:image"
+        content="https://res.cloudinary.com/dexemnogl/image/upload/v1749225060/GinoPlaying_fdzr61.jpg" />
     <meta property="og:url" content="https://testsubject-dj.github.io/Testing/" />
     <meta property="og:description" content="Underground house & garage from Buenos Aires to the world." />
     <script defer src="script.js"></script>
+    <script defer src="js/dynamic-content.js"></script>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -35,85 +39,134 @@
     }
     </script>
 </head>
+
 <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-vinyl"></div>
+        <div class="loading-text">Loading...</div>
+    </div>
+
     <header class="hero">
         <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
         <h1>Gino Colombi</h1>
         <p class="tagline">House Is Life Records &mdash; Underground Culture</p>
-        <a class="cta-button" href="releases.html#releases">Listen Now</a>
+        <a class="cta-button" href="releases.html#releases">
+            <i class="fas fa-play"></i> Listen Now
+        </a>
     </header>
     <nav id="main-nav">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="releases.html">Releases</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="https://open.spotify.com/artist/6HaKvR8UvKwViIaIpUPVJA" target="_blank" rel="noopener noreferrer">Spotify</a></li>
-            <li><a href="https://www.beatport.com/artist/gino-colombi/1033866" target="_blank" rel="noopener noreferrer">Beatport</a></li>
-            <li><a href="https://soundcloud.com/GinoColombi" target="_blank" rel="noopener noreferrer">SoundCloud</a></li>
-            <li><a href="https://instagram.com/gino.colombi" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="https://www.traxsource.com/artist/646908/gino-colombi" target="_blank" rel="noopener noreferrer">Traxsource</a></li>
-            <li><a href="https://songstats.com/artist/1ncl2jz4/gino-colombi" target="_blank" rel="noopener noreferrer">SongStats</a></li>
+            <li><a href="epk.html">EPK</a></li>
+            <li><a href="https://open.spotify.com/artist/6HaKvR8UvKwViIaIpUPVJA" target="_blank"
+                    rel="noopener noreferrer">Spotify</a></li>
+            <li><a href="https://www.beatport.com/artist/gino-colombi/1033866" target="_blank"
+                    rel="noopener noreferrer">Beatport</a></li>
+            <li><a href="https://soundcloud.com/GinoColombi" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+            </li>
+            <li><a href="https://www.beatport.com/label/house-is-life/113633" target="_blank"
+                    rel="noopener noreferrer">House Is Life</a>
+            </li>
+            <li><a href="https://instagram.com/gino.colombi" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
         </ul>
     </nav>
     <main class="container">
-        <section id="home">
+        <section id="home" class="fade-in">
             <h2>Welcome</h2>
-            <p>Step into my world of raw house grooves and digital grit. House Is Life Records keeps the vinyl spirit alive while embracing the future.</p>
+            <p>Step into my world of raw house grooves and digital grit. House Is Life Records keeps the vinyl spirit
+                alive while embracing the future.</p>
         </section>
 
-        <section class="about">
-            <h2>&#127911; About Gino Colombi</h2>
-            <p>Gino Colombi is a DJ and producer from Rosario, Argentina, known for blending Old School House, Tech House, UK Garage, and Techno with a fresh and modern touch. With a decade of experience behind the decks and a deep passion for underground club culture, Gino crafts high-energy sets that bring both nostalgia and innovation to dance floors.</p>
-            <p>As the founder of <strong>House Is Life Records</strong>, Gino’s vision is rooted in the soul of house music—from vinyl culture to new-school digital grooves. His tracks often feature trancey synths, chopped vocals, jazzy organ riffs, and gritty analog textures that pay homage to the roots while pushing the sound forward.</p>
-            <p>His music has been supported by respected underground labels and consistently charts on platforms like Beatport and Traxsource.</p>
-            <p>You can find his tracks on:</p>
-            <div class="connect">
-                <a href="https://open.spotify.com/artist/6HaKvR8UvKwViIaIpUPVJA" target="_blank">Spotify</a>
-                <a href="https://www.beatport.com/artist/gino-colombi/1033866" target="_blank">Beatport</a>
-                <a href="https://www.traxsource.com/artist/646908/gino-colombi" target="_blank">Traxsource</a>
-                <a href="https://soundcloud.com/GinoColombi" target="_blank">SoundCloud</a>
-                <a href="https://songstats.com/artist/1ncl2jz4/gino-colombi" target="_blank">SongStats</a>
+        <!-- Latest Release Spotlight -->
+        <section class="fade-in">
+            <h2>🔥 Latest Release</h2>
+            <div id="latest-release" class="latest-release">
+                <!-- Dynamically loaded -->
             </div>
-            <p>To see more detailed releases, mixes, and booking info, check the corresponding pages.</p>
         </section>
 
-        <section class="instagram-embed">
-            <h2>&#128248; Latest Post</h2>
-            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DKkZSOHAQBC/" data-instgrm-version="14" style="background:#FFF; border:0; margin: 1em auto; max-width:540px; width:100%;">
-</blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
-
+        <section class="about fade-in">
+            <h2>🎧 About Gino Colombi</h2>
+            <p>Gino Colombi is a DJ and producer from Rosario, Argentina, known for blending Old School House, Tech
+                House, UK Garage, and Techno with a fresh and modern touch. With a decade of experience behind the decks
+                and a deep passion for underground club culture, Gino crafts high-energy sets that bring both nostalgia
+                and innovation to dance floors.</p>
+            <p>As the founder of <strong>House Is Life Records</strong>, Gino's vision is rooted in the soul of house
+                music—from vinyl culture to new-school digital grooves. His tracks often feature trancey synths, chopped
+                vocals, jazzy organ riffs, and gritty analog textures that pay homage to the roots while pushing the
+                sound forward.</p>
+            <p>His music has been supported by respected underground labels and consistently charts on platforms like
+                Beatport and Traxsource.</p>
+            <p>Find his tracks on:</p>
+            <div class="connect">
+                <a href="https://open.spotify.com/artist/6HaKvR8UvKwViIaIpUPVJA" target="_blank"><i
+                        class="fab fa-spotify"></i> Spotify</a>
+                <a href="https://www.beatport.com/artist/gino-colombi/1033866" target="_blank"><i
+                        class="fas fa-record-vinyl"></i> Beatport</a>
+                <a href="https://www.traxsource.com/artist/646908/gino-colombi" target="_blank"><i
+                        class="fas fa-music"></i> Traxsource</a>
+                <a href="https://soundcloud.com/GinoColombi" target="_blank"><i class="fab fa-soundcloud"></i>
+                    SoundCloud</a>
+                <a href="https://songstats.com/artist/1ncl2jz4/gino-colombi" target="_blank"><i
+                        class="fas fa-chart-line"></i> SongStats</a>
+            </div>
         </section>
 
-        <section class="embeds">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6HaKvR8UvKwViIaIpUPVJA?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <a href="https://www.beatport.com/artist/gino-colombi/1033866" target="_blank" style="display: inline-flex; align-items: center; text-decoration: none; background: #000; padding: 10px 16px; border-radius: 8px;">
-              <img src="assets/logos/beatport-logo.svg" alt="Beatport Logo" style="height: 24px; margin-right: 10px;">
-              <span style="color: #A6FF00; font-family: sans-serif; font-weight: bold;">Gino Colombi on Beatport</span>
-            </a>
-            <a href="https://soundcloud.com/ginocolombi" target="_blank" style="display: inline-flex; align-items: center; text-decoration: none; background-color: #ff5500; padding: 10px 16px; border-radius: 8px;">
-              <img src="assets/logos/soundcloud-logo.svg" alt="SoundCloud Logo" style="height: 24px; margin-right: 10px;">
-              <span style="color: white; font-family: sans-serif; font-weight: bold;">Gino Colombi on SoundCloud</span>
-            </a>
+        <section class="instagram-embed fade-in">
+            <h2>📸 Latest Post</h2>
+            <div class="instagram-grid" id="instagram-feed">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DKkZSOHAQBC/"
+                    data-instgrm-version="14"
+                    style="background:#FFF; border:0; margin: 0; max-width:540px; width:100%;"></blockquote>
+            </div>
+            <script async src="//www.instagram.com/embed.js"></script>
         </section>
-        <section class="paypal-support-card">
+
+        <section class="embeds fade-in">
+            <h2>🎵 Listen Now</h2>
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/artist/6HaKvR8UvKwViIaIpUPVJA?utm_source=generator&theme=0"
+                width="100%" height="152" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+
+            <div class="embed-buttons">
+                <a class="beatport" href="https://www.beatport.com/artist/gino-colombi/1033866" target="_blank">
+                    <img src="assets/logos/beatport-logo.svg" alt="Beatport Logo">
+                    <span>Gino Colombi on Beatport</span>
+                </a>
+                <a class="soundcloud" href="https://soundcloud.com/ginocolombi" target="_blank">
+                    <img src="assets/logos/soundcloud-logo.svg" alt="SoundCloud Logo">
+                    <span>Gino Colombi on SoundCloud</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="paypal-support-card fade-in">
             <p>
-              Show some love for your favourite artists.<br>
-              Follow this link to their own support page.
-              <a href="https://www.paypal.com/paypalme/GinoColombi" target="_blank">Learn more</a>
+                Show some love for your favourite artists.<br>
+                Follow this link to their support page.
+                <a href="https://www.paypal.com/paypalme/GinoColombi" target="_blank">Learn more</a>
             </p>
-          <a href="https://www.paypal.com/paypalme/GinoColombi" target="_blank" class="paypal-button">
-            💵 Support Gino Colombi
-          </a>
+            <a href="https://www.paypal.com/paypalme/GinoColombi" target="_blank" class="paypal-button">
+                <i class="fas fa-heart"></i> Support Gino Colombi
+            </a>
         </section>
+
         <section class="mailing-list fade-in">
+            <h2>📬 Stay Updated</h2>
+            <p class="section-subtitle">Get exclusive tracks, updates & early access to new releases</p>
             <form action="https://your-mailing-list-provider.com" method="POST">
-              <input type="email" name="email" placeholder="Get exclusive tracks &amp; updates" required />
-              <button type="submit">Subscribe</button>
+                <input type="email" name="email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
             </form>
         </section>
-        
+
     </main>
     <footer>
         <p>&copy; 2025 Gino Colombi</p>
@@ -124,11 +177,19 @@
             <a href="gallery.html">Gallery</a>
         </div>
         <div class="social-icons">
-            <a href="https://instagram.com/gino.colombi" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://soundcloud.com/GinoColombi" target="_blank"><i class="fab fa-soundcloud"></i></a>
-            <a href="https://open.spotify.com/artist/6HaKvR8UvKwViIaIpUPVJA" target="_blank"><i class="fab fa-spotify"></i></a>
-            <a href="https://www.beatport.com/artist/gino-colombi/1033866" target="_blank"><i class="fas fa-record-vinyl"></i></a>
+            <a href="https://instagram.com/gino.colombi" target="_blank" aria-label="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://soundcloud.com/GinoColombi" target="_blank" aria-label="SoundCloud"><i
+                    class="fab fa-soundcloud"></i></a>
+            <a href="https://open.spotify.com/artist/6HaKvR8UvKwViIaIpUPVJA" target="_blank" aria-label="Spotify"><i
+                    class="fab fa-spotify"></i></a>
+            <a href="https://www.beatport.com/artist/gino-colombi/1033866" target="_blank" aria-label="Beatport"><i
+                    class="fas fa-record-vinyl"></i></a>
         </div>
     </footer>
+
+    <!-- Spinning vinyl decoration -->
+    <div class="vinyl-decoration" aria-hidden="true"></div>
 </body>
+
 </html>

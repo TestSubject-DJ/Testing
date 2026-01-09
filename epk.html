@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Electronic Press Kit for Gino Colombi - Underground house DJ and producer. High-res photos, bio, tech rider and booking info.">
+    <meta name="keywords" content="Gino Colombi, EPK, press kit, DJ, producer, booking, underground house">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ginocolombi.com/epk">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>EPK - Gino Colombi</title>
+    <meta property="og:title" content="EPK - Gino Colombi" />
+    <meta property="og:image"
+        content="https://res.cloudinary.com/dexemnogl/image/upload/v1749225060/GinoPlaying_fdzr61.jpg" />
+    <meta property="og:url" content="https://testsubject-dj.github.io/Testing/epk.html" />
+    <meta property="og:description"
+        content="Electronic Press Kit for Gino Colombi - Underground house DJ & Producer." />
+    <script defer src="script.js"></script>
+    <style>
+        /* EPK-specific styles */
+        .epk-section {
+            background: var(--bg-card);
+            border: 3px solid #333;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .epk-section h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .epk-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .epk-photo {
+            position: relative;
+            overflow: hidden;
+            border: 3px solid #333;
+        }
+
+        .epk-photo img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            filter: grayscale(20%);
+            transition: all 0.3s ease;
+        }
+
+        .epk-photo:hover img {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+
+        .epk-photo a {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.9);
+            color: var(--primary-color);
+            padding: 0.5rem;
+            text-align: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .epk-photo:hover a {
+            transform: translateY(0);
+        }
+
+        .tech-specs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .tech-spec-item {
+            background: #000;
+            border: 2px solid var(--primary-color);
+            padding: 1rem;
+        }
+
+        .tech-spec-item strong {
+            color: var(--primary-color);
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: var(--primary-color);
+            color: #000;
+            border: 3px solid #000;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.25rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            text-decoration: none;
+            box-shadow: 4px 4px 0 #000;
+            transition: all 0.2s ease;
+        }
+
+        .download-btn:hover {
+            background: var(--accent-orange);
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 #000;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .bio-short {
+            background: var(--bg-elevated);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: #000;
+            border: 3px solid var(--primary-color);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <h1>Gino Colombi</h1>
+        <p class="tagline">House Is Life Records &mdash; Underground Culture</p>
+    </header>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="releases.html">Releases</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="epk.html" class="active">EPK</a></li>
+            <li><a href="https://open.spotify.com/artist/6HaKvR8UvKwViIaIpUPVJA" target="_blank"
+                    rel="noopener noreferrer">Spotify</a></li>
+            <li><a href="https://www.beatport.com/artist/gino-colombi/1033866" target="_blank"
+                    rel="noopener noreferrer">Beatport</a></li>
+            <li><a href="https://soundcloud.com/GinoColombi" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+            </li>
+            <li><a href="https://www.beatport.com/label/house-is-life/113633" target="_blank"
+                    rel="noopener noreferrer">House Is Life</a>
+            </li>
+            <li><a href="https://instagram.com/gino.colombi" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="container">
+
+        <section id="epk" class="fade-in">
+            <h2>📋 Electronic Press Kit</h2>
+            <p class="section-subtitle">Professional materials for promoters, labels & media</p>
+
+            <!-- Quick Bio -->
+            <div class="epk-section">
+                <h3>Artist Bio</h3>
+                <div class="bio-short">
+                    <strong>Gino Colombi</strong> is an underground house DJ and producer from Rosario, Argentina,
+                    blending Old School House, Tech House, UK Garage, and Techno with a fresh, modern edge. As founder
+                    of <strong>House Is Life Records</strong>, he champions vinyl culture while pushing the sound
+                    forward with trancey synths, chopped vocals, and gritty analog textures.
+                </div>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">
+                    With over a decade behind the decks and releases charting on Beatport and Traxsource, Gino crafts
+                    high-energy sets that bridge nostalgia and innovation. His tracks are supported by respected
+                    underground labels worldwide, bringing raw house grooves from Buenos Aires to global dance floors.
+                </p>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Tracks Released</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Labels</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Global</div>
+                    <div class="stat-label">Reach</div>
+                </div>
+            </div>
+
+            <!-- Press Photos -->
+            <div class="epk-section">
+                <h3>Press Photos (High Resolution)</h3>
+                <div class="epk-grid">
+                    <div class="epk-photo">
+                        <img src="https://res.cloudinary.com/dexemnogl/image/upload/v1749225060/GinoPlaying_fdzr61.jpg"
+                            alt="Gino Colombi playing live">
+                        <a href="https://res.cloudinary.com/dexemnogl/image/upload/v1749225060/GinoPlaying_fdzr61.jpg"
+                            download>
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    <div class="epk-photo">
+                        <img src="https://res.cloudinary.com/dexemnogl/image/upload/v1749225059/GinoAtHome_ikgsl6.jpg"
+                            alt="Gino at studio">
+                        <a href="https://res.cloudinary.com/dexemnogl/image/upload/v1749225059/GinoAtHome_ikgsl6.jpg"
+                            download>
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    <div class="epk-photo">
+                        <img src="https://res.cloudinary.com/dexemnogl/image/upload/v1749225060/Setup_tv0ltg.jpg"
+                            alt="DJ setup">
+                        <a href="https://res.cloudinary.com/dexemnogl/image/upload/v1749225060/Setup_tv0ltg.jpg"
+                            download>
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    <div class="epk-photo">
+                        <img src="https://res.cloudinary.com/dexemnogl/image/upload/v1749225061/Vinyl_m0fljs.jpg"
+                            alt="Vinyl collection">
+                        <a href="https://res.cloudinary.com/dexemnogl/image/upload/v1749225061/Vinyl_m0fljs.jpg"
+                            download>
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Rider -->
+            <div class="epk-section">
+                <h3>Technical Rider</h3>
+                <div class="tech-specs">
+                    <div class="tech-spec-item">
+                        <strong>Setup</strong>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            CDJ-2000NXS2 (x2)<br>
+                            Allen & Heath Xone 96<br>
+                            Or equivalent
+                        </p>
+                    </div>
+                    <div class="tech-spec-item">
+                        <strong>Format</strong>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            USB / Rekordbox<br>
+                            Vinyl (upon request)
+                        </p>
+                    </div>
+                    <div class="tech-spec-item">
+                        <strong>Monitoring</strong>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            DJ booth monitors<br>
+                            Headphones provided
+                        </p>
+                    </div>
+                    <div class="tech-spec-item">
+                        <strong>Set Length</strong>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            1-4 hours<br>
+                            Flexible
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Genres & Style -->
+            <div class="epk-section">
+                <h3>Genres & Style</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+                    <span class="badge">House</span>
+                    <span class="badge">Tech House</span>
+                    <span class="badge">UK Garage</span>
+                    <span class="badge">Techno</span>
+                    <span class="badge">Deep House</span>
+                    <span class="badge">Old School</span>
+                </div>
+                <p style="color: var(--text-muted); margin-top: 1.5rem; font-size: 0.95rem;">
+                    <strong style="color: var(--primary-color);">Sound:</strong> Trancey synths, chopped vocals, jazzy
+                    organ riffs, gritty analog textures. High-energy sets that blend nostalgia with forward-thinking
+                    production.
+                </p>
+            </div>
+
+            <!-- Contact & Booking -->
+            <div class="epk-section">
+                <h3>Booking & Contact</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                    For bookings, collaborations, press inquiries, or interview requests:
+                </p>
+                <div class="connect">
+                    <a href="mailto:gino@houseisliferecords.com">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a href="https://instagram.com/gino.colombi" target="_blank">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div class="epk-section">
+                <h3>Music & Social Links</h3>
+                <div class="connect">
+                    <a href="https://open.spotify.com/artist/6HaKvR8UvKwViIaIpUPVJA" target="_blank">
+                        <i class="fab fa-spotify"></i> Spotify
+                    </a>
+                    <a href="https://www.beatport.com/artist/gino-colombi/1033866" target="_blank">
+                        <i class="fas fa-record-vinyl"></i> Beatport
+                    </a>
+                    <a href="https://www.traxsource.com/artist/646908/gino-colombi" target="_blank">
+                        <i class="fas fa-music"></i> Traxsource
+                    </a>
+                    <a href="https://soundcloud.com/GinoColombi" target="_blank">
+                        <i class="fab fa-soundcloud"></i> SoundCloud
+                    </a>
+                    <a href="https://songstats.com/artist/1ncl2jz4/gino-colombi" target="_blank">
+                        <i class="fas fa-chart-line"></i> SongStats
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Gino Colombi</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="releases.html">Releases</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="epk.html">EPK</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://instagram.com/gino.colombi" target="_blank" aria-label="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://soundcloud.com/GinoColombi" target="_blank" aria-label="SoundCloud"><i
+                    class="fab fa-soundcloud"></i></a>
+            <a href="https://open.spotify.com/artist/6HaKvR8UvKwViIaIpUPVJA" target="_blank" aria-label="Spotify"><i
+                    class="fab fa-spotify"></i></a>
+            <a href="https://www.beatport.com/artist/gino-colombi/1033866" target="_blank" aria-label="Beatport"><i
+                    class="fas fa-record-vinyl"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
